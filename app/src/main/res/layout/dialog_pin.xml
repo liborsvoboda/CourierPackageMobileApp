@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="200sp"
+    android:background="@drawable/pin_back">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/write_pin_number"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pin"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="35sp"
+        android:layout_marginStart="50dp"/>
+
+    <EditText
+        android:id="@+id/txt_pin"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:inputType="numberPassword"
+        android:singleLine="true"
+        android:textSize="23sp"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:background="@drawable/input"
+        tools:ignore="RtlSymmetry" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/btn_pin_drawable"
+            android:text="@string/ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <requestFocus />
+        </Button>
+        <Button
+            android:id="@+id/btn_send_pass"
+            android:layout_marginEnd="10sp"
+            android:text="@string/send_pass"
+            android:background="@drawable/btn_pin_drawable"
+            android:layout_width="0dp"
+            android:layout_weight="1.3"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_marginEnd="10sp"
+            android:text="@string/cancel"
+            android:background="@drawable/btn_pin_drawable"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    signingConfigs {
+        AppSign {
+            storeFile file('E:\\Projekty\\cmp\\mobile\\cmpCourier-master\\cmpApp.jks')
+            storePassword '20cmp20'
+            keyAlias 'key0'
+            keyPassword '20cmp20'
+        }
+    }
+    compileSdkVersion 29
+    android {
+        compileOptions {
+            sourceCompatibility 1.8
+            targetCompatibility 1.8
+        }
+    }
+    defaultConfig {
+        applicationId "zhe.it_tech613.com.cmpcourier"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 51
+        versionName '5.0.7'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '29.0.2'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.3'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    //    implementation 'com.google.android.gms:play-services-vision:8.4.0'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'io.realm:android-adapters:3.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+    implementation 'com.google.maps:google-maps-services:0.9.0'
+    implementation 'org.slf4j:slf4j-nop:1.7.25'
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+    // Add dependency
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.2'
+    implementation('com.edwardvanraak:MaterialBarcodeScanner:0.0.6-ALPHA') {
+        exclude group: 'com.android.support'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-v4'
+        exclude module: 'design'
+
+        exclude module: 'support-annotations'
+        exclude module: 'com.google.android.gms:play-services-maps'
+    }
+    // or implementation depending on gradle version
+    //    configurations.all {
+    //        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+    //            def requested = details.requested
+    //            if (requested.group == 'com.android.support') {
+    //                if (!requested.name.startsWith("multidex")) {
+    //                    details.useVersion '25.3.0'
+    //                }
+    //            }
+    //        }
+    //    }
+    implementation files('libs/commons-net-3.6.jar')
+    implementation files('libs/com.symbol.emdk.wizard.core.jar')
+    implementation files('libs/com.symbol.emdk.wizard.intellijIdea.jar')
+    //    implementation('com.alimuzaffar.lib:pinentryedittext:1.3.10') {
+    //        exclude group: 'com.android.support', module: 'support-v4'
+    //        exclude group: 'com.android.support', module: 'appcompat-v7'
+    //    }
+    implementation 'net.lingala.zip4j:zip4j:1.3.2'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation files('libs/commons-codec-1.6.jar')
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fd8223</color>
+    <color name="colorPrimaryDark">#fd8223</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bluebutton_pressed">#ef9956</color>
+    <color name="textColor">#3ca9da</color>
+    <color name="textColorSecondary">#05638e</color>
+    <color name="gray" >#acacac</color>
+
+    <color name="dark_gray" >#1d1b1b</color>
+    <color name="light_gray" >#dcdcdc</color>
+    <color name="light_blue" >#3ca9da</color>
+    <color name="white_blue">#419ce3</color>
+    <color name="dark_blue">#fd66cb</color>
+    <color name="MENU_POPUP_BACK_COLOR" >#dcdcdc</color>
+    <color name="MENU_POPUP_ITEMS_COLOR" >#3ca9da</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#f8f9f9</color>
+    <color name="red" >#c81e1e</color>
+
+    <color name="red_pressed_on" >#d44022</color>
+    <color name="red_pressed" >#fd6601</color>
+    <color name="duskYellow">#f6b827</color>
+
+    <color name="disable_forground_grey">#42221f1f</color>
+    <color name="disable_thumb_grey">#1c000000</color>
+    <color name="enable_thumb_green">#46bdbf</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="bg_light_blue">#91e7ec</color>
+
+    <color name="text_color">#121213</color>
+
+    <color name="toast_background">#2e2e2e</color>
+    <color name="colorError">#ff6460</color>
+    <color name="colorInfo">#1E90FF</color>
+    <color name="colorSuccess">#78c847</color>
+    <color name="statusOffline">#ff6460</color>
+    <color name="statusOnline">#78c847</color>
+    <color name="colorWarning">#ffd859</color>
+    <color name="grey_hard">#222222</color>
+</resources>
